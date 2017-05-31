@@ -11,6 +11,16 @@ router.get('/', function (req, res, next) {
     console.log("---port--" + req.param("port"));
 
 
+    res.send('respond with a resource');
+});
+
+router.post('/',function (req, res, next) {
+    //
+    console.log("------------cita_test-------------");
+    console.log("----" + req.param("ip"));
+    console.log( req);
+
+
 
     res.send('respond with a resource');
 });

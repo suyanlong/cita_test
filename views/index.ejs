@@ -1,20 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel='stylesheet' href='/stylesheets/style.css'/>
-    <!--<link rel="stylesheet" href="/stylesheets/"/>-->
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/bootstrap.css' />
+    <link rel='stylesheet' href='/stylesheets/bootstrap-theme.css' />
+
+    <script src="/javascripts/jquery.js"></script>
+    <script src="/javascripts/boostrap.js"></script>
+    <script src="/javascripts/browser.js"></script>
+
     <title>cita模拟测试界面</title>
 </head>
+
 <body>
-<!--确实要好好学习一下，ejs模版语言引擎了，值得学习-->
-<div>
-    <h1>cita模拟交易测试</h1>
     <div>
+        <div class="page-header">
+            <h3> 杭州秘猿科技有限公司 </h3>
+        </div>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span12">
+                    <div class="tabbable" id="tabs-207646">
+                        <ul class="nav nav-tabs">
+                            <li class="active">
+                                <a href="#panel-873711" data-toggle="tab">第一部分</a>
+                            </li>
+
+                            <li>
+                                <a href="#panel-353557" data-toggle="tab">第二部分</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="panel-873711">
+
+                                <div class="hero-unit">
+                                    <p>
+                                        这里是一个cita项目模拟测试数据。
+                                    </p>
+                                </div>
+
+                                <form class="form-inline" action="/cita_test" method="get">
+                                    <fieldset>
+                                        <legend>测试信息</legend>
+
+                                        <label>IP地址</label>
+                                        <input type="text" name="ip" value="127.0.0.1">
+
+                                        <label>端口：</label>
+                                        <input type="text" name="port" value="1337">
+
+                                        <label>参数:</label>
+                                        <input type="text" value="">
+
+                                        <label>协议类型:</label>
+                                        <select>
+                                            <option>
+                                                http
+                                            </option>
+                                            <option>
+                                                websocket
+                                            </option>
+                                        </select>
+
+                                        <button class="btn" type="button">测试</button>
+                                    </fieldset>
+                                </form>
+
+                                <div class="progress">
+                                    <div class="bar"></div>
+                                </div>
+
+                                <div class="hero-unit">
+                                    <p>
+                                        显示数据的部分
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane " id="panel-353557">
+                                <p>
+                                    第二部分内容.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
 
     </div>
 
-</div>
-
 </body>
+
 </html>
